@@ -17,6 +17,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Andromax G36C1H"
+#define BTM_DEF_LOCAL_NAME   "Lenovo A6000"
 #define BLUETOOTH_QTI_SW TRUE
 #endif

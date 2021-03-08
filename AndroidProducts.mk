@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rendang.mk
+    $(LOCAL_DIR)/lineage_a6000.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_rendang-user \
-    lineage_rendang-userdebug \
-    lineage_rendang-eng
+    lineage_a6000-user \
+    lineage_a6000-userdebug \
+    lineage_a6000-eng

@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=rendang
-VENDOR=smartfren
+DEVICE=Karft-A6000
+VENDOR=Lenovo
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

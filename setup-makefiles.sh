@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=rendang
-VENDOR=smartfren
+DEVICE=Kraft-A6000
+VENDOR=Lenovo
 
 INITIAL_COPYRIGHT_YEAR=2015
 

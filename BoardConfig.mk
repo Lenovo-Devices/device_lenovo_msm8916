@@ -20,13 +20,13 @@ FORCE_32_BIT := true
 # Inherit from msm8916-common
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/smartfren/rendang
+DEVICE_PATH := device/lenovo/a6000
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8916_X6_6171E
+TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 
 # Broken Rules
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
@@ -35,8 +35,8 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 # Camera
 BOARD_CAMERA_SENSORS := \
     ov5670_q5v41b \
-    ov5648_q5v22e_rendang \
-    gc2355_rendang
+    ov5648_q5v22e_a6000 \
+    gc2355_a6000
 
 TARGET_USES_AOSP := true
 
@@ -83,8 +83,8 @@ TARGET_NO_RPC := true
 BOARD_DTBTOOL_ARGS := -2
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_SOURCE := kernel/smartfren/msm8916
-TARGET_KERNEL_CONFIG := lineageos_rendang_defconfig
+TARGET_KERNEL_SOURCE := kernel/lenovo/msm8916
+TARGET_KERNEL_CONFIG := lineageos_a6000_defconfig
 BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 
 # Power
@@ -103,4 +103,4 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
 # inherit from the proprietary version
-include vendor/smartfren/rendang/BoardConfigVendor.mk
+include vendor/lenovo/a6000/BoardConfigVendor.mk
